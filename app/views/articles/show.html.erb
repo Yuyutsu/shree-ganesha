@@ -9,6 +9,7 @@
 </p>
  
 <h2>Comments</h2>
+<<<<<<< HEAD
 <% @article.comments.each do |comment| %>
   <p>
     <strong>Commenter:</strong>
@@ -35,6 +36,12 @@
     <%= f.submit %>
   </p>
 <% end %>
+=======
+<%= render @article.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+>>>>>>> 2dcb805fecf0addaa33a8a3a8fb0dc4cfdd7a34f
  
 <%= link_to 'Edit Article', edit_article_path(@article) %> |
 <%= link_to 'Back to Articles', articles_path %>
